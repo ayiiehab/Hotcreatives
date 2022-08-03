@@ -1,0 +1,587 @@
+
+* {
+    box-sizing: border-box;
+    padding   : 0px;
+    margin    : 0%;
+}
+
+body {
+    font-family: Arial Unicode MS Regular;
+
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    width           : 100%;
+    color           : #fff;
+    z-index         : 9999999999999999;
+    transition      : background-color 2s, padding 2s;
+
+
+}
+
+.navbar-brand img {
+    width           : 100%;
+    height          : 70px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #Fff !important;
+}
+
+
+
+.navbar-collapse ul li {
+    padding-left: 50px;
+}
+
+.navbar-nav a {
+
+    font-size: 25px;
+    color    : #fff;
+}
+
+/* ----------------end Nav------------ */
+#home .layer .frist-slide {
+    background-image     : url(../images/slider1.jpg);
+    background-position  : center center;
+    background-size      : cover;
+    background-attachment: fixed;
+}
+
+#home .layer .secand-slide {
+    background-image     : url(../images/slider2.jpg);
+    background-position  : center center;
+    background-size      : cover;
+    background-attachment: fixed;
+}
+
+#home .layer .thrid-slide {
+    background-image     : url(../images/slideshow-3.jpg);
+    background-position  : center center;
+    background-size      : cover;
+    background-attachment: fixed;
+}
+
+#home .layer h2 {
+    font-size  : 60px;
+    font-weight: 700;
+    color      : white;
+    position   : relative;
+    top        : 35%;
+    line-height: 0.8;
+    z-index    : 10000;
+    font-family: 'Kufam', sans-serif;
+}
+
+#home .layer .caption {
+    font-size  : 22px;
+    font-weight: 600;
+
+    color      : white;
+    position   : relative;
+    top        : 30%;
+    right      : 5%;
+    line-height: 1.7;
+    z-index    : 10000;
+    font-family: Arial Unicode MS Regular;
+
+}
+
+#home .layer {
+    position: relative;
+}
+
+#home .layer .bgColor {
+    background-color: #73b9f33f;
+    width           : 100%;
+    position        : absolute;
+    top             : 0%;
+    z-index         : 111;
+
+}
+
+/* ---------end of home -------------- */
+
+
+#about {
+    margin-top: 70px;
+}
+
+#about .container h2 {
+    text-align : center;
+    margin-top : 14px;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 700;
+    position   : relative;
+
+}
+
+#about .container h2:before,
+#services .service-title h3::before,
+#client h2::before,
+#contact .contact-title h3::before {
+    content         : '';
+    position        : absolute;
+    left            : 50%;
+    bottom          : -18%;
+    transform       : translate(-50%);
+    width           : 145px;
+    height          : 3px;
+    background-color: #49a6f2;
+
+}
+
+#clients .title h4::before {
+    width: 100px;
+}
+
+
+
+#about .container h2:after,
+#services .service-title h3::after,
+#client h2::after,
+#contact .contact-title h3::after {
+
+
+    content         : '';
+    position        : absolute;
+    bottom          : -18%;
+    width           : 20px;
+    height          : 3px;
+    border-right    : 7px solid #fff;
+    border-left     : 7px solid #fff;
+    background-color: #49a6f2;
+    border-radius   : 50%;
+    right           : 50%;
+    transform       : translateX(50%);
+}
+
+
+
+#about .container .row .item {
+
+    border-radius  : 25px;
+    text-align     : center;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+#about .container .row .item img {
+    width : 70%;
+    /*  border: #49a6f2 solid 1px;*/
+   
+}
+
+#about .container .row .item h3 {
+    font-size  : 40px;
+    font-family: 'Kufam', sans-serif;
+    margin-top : 5px;
+}
+
+#about .container .row .item p {
+    font-size: 22px;
+
+    font-family: Arial Unicode MS Regular;
+}
+
+/* ----------------services---------- */
+#services {
+    box-sizing: border-box;
+}
+
+.service-title {
+    position: relative;
+
+
+}
+
+.service-title h3 {
+    font-weight: 700;
+    font-size  : 35px;
+    text-align : center;
+    margin-top : 14px;
+    font-family: 'Kufam', sans-serif;
+}
+
+
+
+
+#services .serice-info {
+    background-color: white;
+    height          : 93%;
+    position        : relative;
+}
+
+#services .serice-info a {
+    background-color: #49a6f2;
+    color           : #fff;
+    text-decoration : none;
+    position        : absolute;
+    bottom          : 8%;
+    left            : 50%;
+    transform       : translateX(-50%) translateY(50%);
+
+}
+
+
+#services i {
+    font-size: 35px;
+}
+
+
+
+#services .ser-icon {
+    height       : 22%;
+    width        : 15%;
+    padding      : 10px auto 20px auto;
+    border-radius: 50%;
+    box-shadow   : 0 0 0 10px #49a6f2;
+    color        : black;
+    transition   : all 1s;
+
+}
+
+
+#services .serice-info:hover .ser-icon {
+    background-color: #49a6f2;
+    box-shadow      : 0 0 0 10px #cde1f8;
+    color           : white;
+
+}
+
+#services .serice-info:hover a {
+    color           : #49a6f2;
+    background-color: #fff;
+    border          : 1px solid #49a6f2;
+}
+
+#services .serice-info {
+    border-radius: 6px;
+    box-shadow   : 0px 2px 2px rgb(209, 208, 208);
+}
+
+#services .serice-info span {
+    color      : #49a6f2;
+    font-size  : 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:500px) {
+    #services .ser-icon {
+        height       : 18%;
+        width        : 15%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    #services i {
+        font-size: 25px;
+    }
+   
+
+    #contact .contact-title h3::after {
+        bottom: -18%;
+    }
+
+}
+
+svg {
+    fill: #49a6f2;
+}
+
+/* ------------------Clients-------------- */
+
+#client{
+    position: relative;
+}
+#client h2 {
+    text-align : center;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 700;
+    position   : absolute;
+    top:0%;   
+}
+#client .owl-carousel .item{
+    width: 500px;
+}
+
+/* -------------------------Conatct--------------- */
+#contact {
+    width                : 100%;
+    background-image     : url(../images/overlay-bg.jpg);
+    background-size      : 100% 100%;
+    background-attachment: fixed;
+    background-position  : center center;
+}
+
+#contact .content-layer {
+
+    background-color: #49a6f275;
+    width           : 100%;
+    height          : 100%;
+
+
+}
+
+#contact .contact-content {
+    width           : 80%;
+    height          : 90%;
+    background-color: #fff;
+}
+
+#contact .contact-title h3 {
+    font-weight: 400;
+    font-size  : 35px;
+    color      : black;
+}
+
+
+
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    color  : #4e4e4e;
+    border : 1px solid #4e4e4e;
+
+}
+
+#contact input:hover,
+#contact textarea:hover {
+    box-shadow: 0 0 0 2px #cde1f8;
+    border    : 1px solid #49a6f2;
+
+}
+
+#contact button {
+    background-color: #49a6f2;
+    padding         : 15px 30px;
+    color           : #fff;
+    text-align      : center;
+    font-size       : 20px;
+    border          : none;
+
+
+}
+
+#contact .list-icons i {
+    color: #49a6f2;
+}
+
+#contact .icons-brand div {
+    border-radius: 50px;
+    padding      : 2px 5px;
+    border       : 3px solid #49a6f2;
+    margin-left  : 10px;
+    font-size    : 20px;
+}
+
+#contact .icons-brand div:hover {
+    background-color: #49a6f2;
+    box-shadow      : 0 0 0 3px #cde1f8;
+    color           : white;
+
+}
+
+#contact .contact-title {
+    position: relative;
+}
+
+#contact .list-icons ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 650px) {
+
+
+    #contact .contact-info .contact-title h3::after {
+        left  : 43%;
+        bottom: -18%;
+    }
+
+
+}
+
+.fh5co-heading h2 {
+    font-size     : 45px;
+    margin-bottom : 25px;
+    line-height   : 1.5;
+    color         : #000;
+    text-transform: uppercase;
+    position      : relative;
+    margin-top    : 200px;
+    font-family   : Allerta;
+}
+
+.fh5co-heading p {
+    font-size  : 20px;
+    line-height: 1.5;
+    color      : #828282;
+    font-family: Allerta;
+
+}
+
+.pricing {
+    padding: 7em 0;
+    clear  : both;
+}
+
+.pricing {
+    display      : block;
+    float        : left;
+    margin-bottom: 30px;
+    width        : 100%;
+}
+
+.price-box {
+    width                : 100%;
+    text-align           : center;
+    padding              : 30px;
+    background           : rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    -ms-border-radius    : 5px;
+    border-radius        : 5px;
+    margin-bottom        : 40px;
+    position             : relative;
+    font-family          : Allerta;
+}
+
+.price-box.popular .btn-select-plan {
+    background : #5bc0de 6;
+    font-family: Allerta;
+
+}
+
+.price-box.popular .price {
+    color: #5bc0de 6;
+}
+
+.price-box .btn-select-plan {
+    padding    : 10px 20px;
+    background : #5bc0de;
+    color      : #fff;
+    font-family: Allerta;
+
+}
+
+.price-box .classes {
+    padding    : 0;
+    font-family: Allerta;
+    margin-top : 10px;
+}
+
+.price-box .classes li {
+    display   : block;
+    width     : 100%;
+    list-style: none;
+    margin    : 0;
+    font-size : 16px;
+    padding   : 8px 10px;
+
+}
+
+.price-box .classes li.color {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.pricing-plan {
+    margin        : 0 0 50px 0;
+    padding       : 0;
+    font-size     : 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight   : 700;
+    color         : #888f94;
+}
+
+.pricing-plan.pricing-plan-offer {
+    margin-bottom: 24px;
+}
+
+.pricing-plan span {
+    display      : block;
+    margin-top   : 10px;
+    margin-bottom: 0;
+    color        : #d5d8db;
+}
+
+.price {
+    font-size  : 45px;
+    color      : #000;
+    line-height: 50px;
+}
+
+.price .currency {
+    font-size    : 30px;
+    top          : -0.9em;
+    padding-right: 10px;
+    font-family  : Allerta;
+
+}
+
+.price small {
+    font-size     : 13px;
+    display       : block;
+    text-transform: uppercase;
+    color         : #888f94;
+}
+
+
+/* ------------------footer----------- */
+footer {
+    background-image: url(../images/dotted-map.png);
+    background-color: #222;
+    background-size : cover
+}
+
+footer .item h3 {
+    color      : #fff;
+    font-family: 'Kufam', sans-serif;
+
+}
+
+footer .item p {
+    color        : #ffffff;
+    margin-bottom: 5px;
+}
+
+
+
+footer .foot {
+    background-color: black;
+    width           : 100%;
+    color           : #fff;
+}
+
+footer .foot a {
+    font-weight    : 600;
+    text-decoration: none;
+    color          : #fff;
+}
+
+footer .foot i:hover,
+footer .foot a:hover {
+    color: #49a6f2;
+}
+
+/* -------------------PHONE--------- */
+ 
+
+@media (min-width:480px)  { 
+    #home .layer h2 {
+        margin-bottom:20px;
+
+    }
+    #about .container .row .col-md-4{
+        display: block;
+        width: 100%;
+            }
+}
+    
+
+
